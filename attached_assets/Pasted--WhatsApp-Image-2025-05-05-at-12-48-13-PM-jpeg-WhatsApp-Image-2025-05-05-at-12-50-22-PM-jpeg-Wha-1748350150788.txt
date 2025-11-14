@@ -1,0 +1,62 @@
+'WhatsApp Image 2025-05-05 at 12.48.13 PM.jpeg'
+'WhatsApp Image 2025-05-05 at 12.50.22 PM.jpeg'
+'WhatsApp Image 2025-05-08 at 1.11.50 PM.jpeg'
+'WhatsApp Image 2025-05-15 at 9.30.21 AM.jpeg'
+'WhatsApp Image 2025-05-18 at 12.10.09 PM.jpeg'
+'WhatsApp Image 2025-05-18 at 12.13.21 PM.jpeg'
+'WhatsApp Image 2025-05-24 at 7.46.19 PM.jpeg'
+ young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair.jpg
+(venv) nirvay37@nirvay37-IdeaPad-Gaming-3-15ACH6:~/Downloads$ cd 'fast-next-wagtail(14)'
+(venv) nirvay37@nirvay37-IdeaPad-Gaming-3-15ACH6:~/Downloads/fast-next-wagtail(14)$ ls
+fast-next-wagtail
+(venv) nirvay37@nirvay37-IdeaPad-Gaming-3-15ACH6:~/Downloads/fast-next-wagtail(14)$ cd fast-next-wagtail
+(venv) nirvay37@nirvay37-IdeaPad-Gaming-3-15ACH6:~/Downloads/fast-next-wagtail(14)/fast-next-wagtail$ ls
+attached_assets  backend  cms  frontend  generated-icon.png  nirvay777@.pub  package.json  package-lock.json  pyproject.toml  replit.nix  uv.lock
+(venv) nirvay37@nirvay37-IdeaPad-Gaming-3-15ACH6:~/Downloads/fast-next-wagtail(14)/fast-next-wagtail$ cd cms
+(venv) nirvay37@nirvay37-IdeaPad-Gaming-3-15ACH6:~/Downloads/fast-next-wagtail(14)/fast-next-wagtail/cms$ ls
+api  api.py  articles  conditions  drugs  healthinfo  home  locale  manage.py  media  news  search
+(venv) nirvay37@nirvay37-IdeaPad-Gaming-3-15ACH6:~/Downloads/fast-next-wagtail(14)/fast-next-wagtail/cms$ python manage.py runserver 0.0.0.0:8001
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/nirvay37/venv/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/nirvay37/venv/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 124, in inner_run
+    autoreload.raise_last_exception()
+  File "/home/nirvay37/venv/lib/python3.12/site-packages/django/utils/autoreload.py", line 86, in raise_last_exception
+    raise _exception[1]
+  File "/home/nirvay37/venv/lib/python3.12/site-packages/django/core/management/__init__.py", line 394, in execute
+    autoreload.check_errors(django.setup)()
+  File "/home/nirvay37/venv/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/home/nirvay37/venv/lib/python3.12/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/nirvay37/venv/lib/python3.12/site-packages/django/apps/registry.py", line 116, in populate
+    app_config.import_models()
+  File "/home/nirvay37/venv/lib/python3.12/site-packages/django/apps/config.py", line 269, in import_models
+    self.models_module = import_module(models_module_name)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/nirvay37/venv/lib/python3.12/site-packages/modeltranslation/models.py", line 31, in <module>
+    from cuser.middleware import CuserMiddleware
+  File "/home/nirvay37/venv/lib/python3.12/site-packages/cuser/middleware.py", line 3, in <module>
+    from cuser.compat import User
+  File "/home/nirvay37/venv/lib/python3.12/site-packages/cuser/compat.py", line 15, in <module>
+    User = lazy(get_user_model, AUTH_USER_MODEL)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nirvay37/venv/lib/python3.12/site-packages/django/utils/functional.py", line 175, in lazy
+    for type_ in resultclass.mro():
+                 ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'mro'

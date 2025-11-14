@@ -1,0 +1,41 @@
+Error fetching health topics: AxiosError: connect ECONNREFUSED 0.0.0.0:8001
+    at AxiosError.from (file:///home/runner/workspace/frontend/node_modules/axios/lib/core/AxiosError.js:92:14)
+    at RedirectableRequest.handleRequestError (file:///home/runner/workspace/frontend/node_modules/axios/lib/adapters/http.js:620:25)
+    at RedirectableRequest.emit (node:events:530:35)
+    at eventHandlers.<computed> (/home/runner/workspace/frontend/node_modules/follow-redirects/index.js:49:24)
+    at ClientRequest.emit (node:events:518:28)
+    at emitErrorEvent (node:_http_client:101:11)
+    at Socket.socketErrorListener (node:_http_client:504:5)
+    at Socket.emit (node:events:518:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (file:///home/runner/workspace/frontend/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async fetchHealthTopics (webpack-internal:///./utils/api.js:67:26)
+    at async Promise.all (index 1)
+    at async getStaticProps (webpack-internal:///./pages/index.js:783:44)
+    at async e8 (/home/runner/workspace/frontend/node_modules/next/dist/compiled/next-server/pages.runtime.dev.js:17:3930)
+    at async doRender (/home/runner/workspace/frontend/node_modules/next/dist/server/base-server.js:1414:30)
+    at async cacheEntry.responseCache.get.routeKind (/home/runner/workspace/frontend/node_modules/next/dist/server/base-server.js:1588:28)
+    at async /home/runner/workspace/frontend/node_modules/next/dist/server/response-cache/index.js:90:36
+    at async /home/runner/workspace/frontend/node_modules/next/dist/lib/batcher.js:45:32 {
+  port: 8001,
+  address: '0.0.0.0',
+  syscall: 'connect',
+  code: 'ECONNREFUSED',
+  errno: -111,
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [ 'xhr', 'http', 'fetch' ],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 10000,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,

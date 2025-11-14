@@ -1,0 +1,35 @@
+[HMR] connected websocket.js:39:28
+[Fast Refresh] rebuilding hot-reloader-client.js:222:25
+GET
+https://images.unsplash.com/photo-1547561091-3d985041d42f?auto=format&fit=crop&w=800&h=500
+NS_BINDING_ABORTED
+
+A resource is blocked by OpaqueResponseBlocking, please check browser console for details. photo-1547561091-3d985041d42f
+GET
+https://images.unsplash.com/photo-1547561091-3d985041d42f?auto=format&fit=crop&w=800&h=500
+NS_BINDING_ABORTED
+
+A resource is blocked by OpaqueResponseBlocking, please check browser console for details. photo-1547561091-3d985041d42f
+Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools react-dom.development.js:29890:17
+Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://localhost:8001/api/news/latest/?lang=en. (Reason: CORS request did not succeed). Status code: (null).
+No response received: 
+XMLHttpRequest { readyState: 4, timeout: 10000, withCredentials: false, upload: XMLHttpRequestUpload, responseURL: "", status: 0, statusText: "", responseType: "", response: "", responseText: "" }
+hydration-error-info.js:63:14
+Error fetching news: Network Error hydration-error-info.js:63:14
+Error fetching news: 
+Object { message: "Network Error", name: "AxiosError", code: "ERR_NETWORK", config: {…}, request: XMLHttpRequest, stack: "", … }
+hydration-error-info.js:63:14
+Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://localhost:8001/api/news/latest/?lang=en. (Reason: CORS request did not succeed). Status code: (null).
+No response received: 
+XMLHttpRequest { readyState: 4, timeout: 10000, withCredentials: false, upload: XMLHttpRequestUpload, responseURL: "", status: 0, statusText: "", responseType: "", response: "", responseText: "" }
+hydration-error-info.js:63:14
+Error fetching news: Network Error hydration-error-info.js:63:14
+Error fetching news: 
+Object { message: "Network Error", name: "AxiosError", code: "ERR_NETWORK", config: {…}, request: XMLHttpRequest, stack: "", … }
+hydration-error-info.js:63:14
+GET
+https://images.unsplash.com/photo-1547561091-3d985041d42f?auto=format&fit=crop&w=800&h=500
+NS_BINDING_ABORTED
+
+[HMR] connected websocket.js:39:28
+A resource is blocked by OpaqueResponseBlocking, please check browser console for details. photo-1547561091-3d985041d42f

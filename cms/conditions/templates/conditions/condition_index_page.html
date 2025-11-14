@@ -1,0 +1,34 @@
+
+{% extends "base.html" %}
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block content %}
+<div class="container mx-auto px-6 py-8">
+    <h1 class="text-4xl font-bold mb-8">{{ page.title }}</h1>
+    
+    {% if page.intro %}
+        <div class="prose max-w-none mb-8">
+            {{ page.intro|richtext }}
+        </div>
+    {% endif %}
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {% for condition in conditions %}
+            <div class="bg-white shadow rounded-lg overflow-hidden">
+                {% if condition.image %}
+                    {% image condition.image fill-800x500 as img %}
+                    <img src="{{ img.url }}" alt="{{ condition.title }}" class="w-full h-48 object-cover">
+                {% endif %}
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold mb-2">
+                        <a href="{% pageurl condition %}" class="hover:text-blue-600">{{ condition.title }}</a>
+                    </h2>
+                    {% if condition.subtitle %}
+                        <p class="text-gray-600 mb-4">{{ condition.subtitle }}</p>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,77 @@
+1/4
+Next.js 15.3.1 (stale)Webpack
+Runtime Error
+
+AxiosError: Network Error
+
+utils/api.js (162:32) @ fetchLatestNews
+
+  160 | export const fetchLatestNews = async () => {
+  161 |   try {
+> 162 |     const response = await api.get('/api/news/latest');
+      |                                ^
+  163 |     return response.data;
+  164 |   } catch (error) {
+  165 |     console.error('Error fetching news:', error);
+
+Call Stack 113
+Show 83 ignore-listed frame(s)
+fetchLatestNews
+utils/api.js (162:32)
+NewsIndex.useEffect
+pages/news/index.js (15:20)
+fetchLatestNews
+utils/api.js (162:32)
+NewsIndex.useEffect
+pages/news/index.js (15:20)
+../node_modules/scheduler/cjs/scheduler.development.js
+.next/static/chunks/main.js (2707:1)
+options.factory
+.next/static/chunks/webpack.js (651:31)
+__webpack_require__
+.next/static/chunks/webpack.js (37:33)
+fn
+.next/static/chunks/webpack.js (308:21)
+../node_modules/scheduler/index.js
+.next/static/chunks/main.js (2718:1)
+options.factory
+.next/static/chunks/webpack.js (651:31)
+__webpack_require__
+.next/static/chunks/webpack.js (37:33)
+fn
+.next/static/chunks/webpack.js (308:21)
+../node_modules/react-dom/cjs/react-dom-client.development.js
+.next/static/chunks/main.js (2619:1)
+options.factory
+.next/static/chunks/webpack.js (651:31)
+__webpack_require__
+.next/static/chunks/webpack.js (37:33)
+fn
+.next/static/chunks/webpack.js (308:21)
+../node_modules/react-dom/client.js
+.next/static/chunks/main.js (2641:1)
+options.factory
+.next/static/chunks/webpack.js (651:31)
+__webpack_require__
+.next/static/chunks/webpack.js (37:33)
+fn
+.next/static/chunks/webpack.js (308:21)
+../node_modules/next/dist/client/index.js
+.next/static/chunks/main.js (1502:1)
+options.factory
+.next/static/chunks/webpack.js (651:31)
+__webpack_require__
+.next/static/chunks/webpack.js (37:33)
+fn
+.next/static/chunks/webpack.js (308:21)
+../node_modules/next/dist/client/next-dev.js
+.next/static/chunks/main.js (1513:1)
+options.factory
+.next/static/chunks/webpack.js (651:31)
+__webpack_require__
+.next/static/chunks/webpack.js (37:33)
+__webpack_exec__
+.next/static/chunks/main.js (2734:67)
+<unknown>
+.next/static/chunks/main.js (2735:53)
+<unknown>

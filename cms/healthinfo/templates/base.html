@@ -1,0 +1,61 @@
+{% load static wagtailcore_tags wagtailuserbar %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>{% block title %}{% if page.seo_title %}{{ page.seo_title }}{% else %}{{ page.title }}{% endif %}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    {# Tailwind CSS #}
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    {% block extra_css %}
+    {# Add extra CSS here #}
+    {% endblock %}
+</head>
+
+<body class="bg-gray-50 min-h-screen flex flex-col">
+    {% wagtailuserbar %}
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-6 py-4">
+            <nav class="flex items-center justify-between">
+                <div class="text-xl font-bold text-blue-600">
+                    <a href="/">Health Info CMS</a>
+                </div>
+                <div class="space-x-4">
+                    <a href="/admin/" class="text-gray-700 hover:text-blue-600">Admin</a>
+                    <a href="/search/" class="text-gray-700 hover:text-blue-600">Search</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6">
+            <p class="text-center">&copy; {% now "Y" %} Health Info CMS</p>
+        </div>
+    </footer>
+
+    {% block extra_js %}
+    {# Add extra JavaScript here #}
+    {% endblock %}
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>{% block title %}{% if page.seo_title %}{{ page.seo_title }}{% else %}{{ page.title }}{% endif %}{% endblock %}{% block title_suffix %}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    {% block content %}{% endblock %}
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

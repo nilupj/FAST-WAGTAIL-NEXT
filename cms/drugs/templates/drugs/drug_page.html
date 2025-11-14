@@ -1,0 +1,153 @@
+
+{% extends "base.html" %}
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8">
+    <article class="max-w-4xl mx-auto">
+        <h1 class="text-4xl font-bold mb-4">{{ page.title }}</h1>
+        
+        {% if page.image %}
+            {% image page.image width-800 class="w-full h-auto mb-6 rounded-lg" %}
+        {% endif %}
+
+        {% if page.generic_name %}
+            <div class="mb-6">
+                <h2 class="text-xl font-semibold mb-2">Generic Name</h2>
+                <p>{{ page.generic_name }}</p>
+            </div>
+        {% endif %}
+
+        {% if page.brand_names %}
+            <div class="mb-6">
+                <h2 class="text-xl font-semibold mb-2">Brand Names</h2>
+                <p>{{ page.brand_names }}</p>
+            </div>
+        {% endif %}
+
+        {% if page.drug_class %}
+            <div class="mb-6">
+                <h2 class="text-xl font-semibold mb-2">Drug Class</h2>
+                <p>{{ page.drug_class }}</p>
+            </div>
+        {% endif %}
+
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold mb-2">Overview</h2>
+            {{ page.overview|richtext }}
+        </div>
+
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold mb-2">Uses</h2>
+            {{ page.uses|richtext }}
+        </div>
+
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold mb-2">Dosage</h2>
+            {{ page.dosage|richtext }}
+        </div>
+
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold mb-2">Side Effects</h2>
+            {{ page.side_effects|richtext }}
+        </div>
+
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold mb-2">Warnings</h2>
+            {{ page.warnings|richtext }}
+        </div>
+
+        {% if page.interactions %}
+            <div class="mb-6">
+                <h2 class="text-xl font-semibold mb-2">Drug Interactions</h2>
+                {{ page.interactions|richtext }}
+            </div>
+        {% endif %}
+
+        {% if page.storage %}
+            <div class="mb-6">
+                <h2 class="text-xl font-semibold mb-2">Storage</h2>
+                {{ page.storage|richtext }}
+            </div>
+        {% endif %}
+
+        {% if page.pregnancy_category %}
+            <div class="mb-6">
+                <h2 class="text-xl font-semibold mb-2">Pregnancy Category</h2>
+                <p>{{ page.pregnancy_category }}</p>
+            </div>
+        {% endif %}
+    </article>
+</div>
+{% endblock %}
+{% extends "base.html" %}
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-4">
+        {{ page.title }}
+        {% if page.generic_name %}
+        ({{ page.generic_name }})
+        {% endif %}
+    </h1>
+
+    {% if page.brand_names %}
+    <p class="text-gray-600 mb-6">Brand names: {{ page.brand_names }}</p>
+    {% endif %}
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2">
+            <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+                <h2 class="text-xl font-semibold mb-4">Overview</h2>
+                {{ page.overview|richtext }}
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+                <h2 class="text-xl font-semibold mb-4">Uses</h2>
+                {{ page.uses|richtext }}
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+                <h2 class="text-xl font-semibold mb-4">Side Effects</h2>
+                {{ page.side_effects|richtext }}
+            </div>
+        </div>
+
+        <div>
+            {% if page.warnings %}
+            <div class="bg-red-50 rounded-lg shadow-md p-6 mb-6">
+                <h2 class="text-xl font-semibold mb-4 text-red-700">Important Warnings</h2>
+                <div class="text-red-600">
+                    {{ page.warnings|richtext }}
+                </div>
+            </div>
+            {% endif %}
+
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-xl font-semibold mb-4">Quick Facts</h2>
+                {% if page.drug_class %}
+                <div class="mb-4">
+                    <h3 class="font-medium text-gray-700">Drug Class</h3>
+                    <p>{{ page.drug_class }}</p>
+                </div>
+                {% endif %}
+
+                {% if page.storage %}
+                <div class="mb-4">
+                    <h3 class="font-medium text-gray-700">Storage</h3>
+                    {{ page.storage|richtext }}
+                </div>
+                {% endif %}
+
+                {% if page.pregnancy_category %}
+                <div>
+                    <h3 class="font-medium text-gray-700">Pregnancy Category</h3>
+                    <p>{{ page.pregnancy_category }}</p>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,24 @@
+[project]
+name = "repl-nix-workspace"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.11"
+dependencies = [
+    "alembic>=1.15.2",
+    "django>=5.2",
+    "django-cors-headers>=4.7.0",
+    "fastapi-socketio>=0.0.10",
+    "fastapi>=0.115.12",
+    "httpx>=0.28.1",
+    "psycopg2-binary>=2.9.10",
+    "pydantic>=2.11.3",
+    "python-dotenv>=1.1.0",
+    "python-socketio>=5.13.0",
+    "pywebpush>=2.0.3",
+    "sqlalchemy>=2.0.40",
+    "uvicorn>=0.34.1",
+    "wagtail>=6.4.1",
+    "django-modeltranslation>=0.19.14",
+    "wagtail-localize>=1.12.1",
+    "django-rosetta>=0.10.2",
+]

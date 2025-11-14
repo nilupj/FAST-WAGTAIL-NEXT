@@ -1,0 +1,37 @@
+
+{% extends "base.html" %}
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8">
+    <h1 class="text-4xl font-bold mb-8">{{ page.title }}</h1>
+    
+    {% if page.intro %}
+        <div class="prose max-w-none mb-8">
+            {{ page.intro|richtext }}
+        </div>
+    {% endif %}
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {% for drug in drugs %}
+            <div class="bg-white shadow rounded-lg overflow-hidden">
+                {% if drug.image %}
+                    {% image drug.image fill-800x500 as img %}
+                    <img src="{{ img.url }}" alt="{{ drug.title }}" class="w-full h-48 object-cover">
+                {% endif %}
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold mb-2">
+                        <a href="{% pageurl drug %}" class="hover:text-blue-600">{{ drug.title }}</a>
+                    </h2>
+                    {% if drug.generic_name %}
+                        <p class="text-gray-600 mb-2">Generic Name: {{ drug.generic_name }}</p>
+                    {% endif %}
+                    {% if drug.drug_class %}
+                        <p class="text-gray-500">Class: {{ drug.drug_class }}</p>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

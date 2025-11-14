@@ -1,0 +1,921 @@
+GET
+https://images.unsplash.com/photo-1547561091-3d985041d42f?auto=format&fit=crop&w=800&h=500
+NS_BINDING_ABORTED
+
+A resource is blocked by OpaqueResponseBlocking, please check browser console for details. photo-1547561091-3d985041d42f
+GET
+https://images.unsplash.com/photo-1547561091-3d985041d42f?auto=format&fit=crop&w=800&h=500
+NS_BINDING_ABORTED
+
+Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools react-dom.development.js:29890:17
+A resource is blocked by OpaqueResponseBlocking, please check browser console for details. photo-1547561091-3d985041d42f
+Source map error: request failed with status 404
+Resource URL: https://unpkg.com/feather-icons
+Source Map URL: feather.min.js.map
+[HMR] connected websocket.js:39:28
+GET
+http://localhost:5000/favicon.ico
+[HTTP/1.1 404 Not Found 4ms]
+
+Warning: Each child in a list should have a unique "key" prop.
+
+Check the render method of `Home`. See https://reactjs.org/link/warning-keys for more information.
+ArticleCard@webpack-internal:///./components/ArticleCard.js:15:23
+Home@webpack-internal:///./pages/index.js:140:47
+MyApp@webpack-internal:///./pages/_app.js:14:36
+PathnameContextProviderAdapter@webpack-internal:///./node_modules/next/dist/shared/lib/router/adapters.js:81:42
+ErrorBoundary@webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ErrorBoundary.js:41:9
+ReactDevOverlay@webpack-internal:///./node_modules/next/dist/client/components/react-dev-overlay/pages/ReactDevOverlay.js:33:55
+Container@webpack-internal:///./node_modules/next/dist/client/index.js:81:1
+AppContainer@webpack-internal:///./node_modules/next/dist/client/index.js:189:24
+Root@webpack-internal:///./node_modules/next/dist/client/index.js:413:35 hydration-error-info.js:63:14
+XHRGET
+http://0.0.0.0:8001/api/news/latest/?lang=en
+[HTTP/1.1 404 Not Found 21ms]
+
+XHRGET
+http://0.0.0.0:8001/api/news/latest/?lang=en
+[HTTP/1.1 404 Not Found 20ms]
+
+GET
+https://images.unsplash.com/photo-1547561091-3d985041d42f?auto=format&fit=crop&w=800&h=500
+NS_BINDING_ABORTED
+
+API error: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Page not found at /api/news/latest/</title>
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <style>
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font-family: sans-serif; background:#eee; color:#000; }
+    body > :where(header, main, footer) { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 small { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
+  </style>
+</head>
+<body>
+  <header id="summary">
+    <h1>Page not found <small>(404)</small></h1>
+    
+    <table class="meta">
+      <tr>
+        <th scope="row">Request Method:</th>
+        <td>GET</td>
+      </tr>
+      <tr>
+        <th scope="row">Request URL:</th>
+        <td>http://0.0.0.0:8001/api/news/latest/?lang=en</td>
+      </tr>
+      
+      <tr>
+        <th scope="row">Raised by:</th>
+        <td>wagtail.views.serve</td>
+      </tr>
+      
+    </table>
+  </header>
+
+  <main id="info">
+    
+      <p>
+      Using the URLconf defined in <code>healthinfo.urls</code>,
+      Django tried these URL patterns, in this order:
+      </p>
+      <ol>
+        
+          <li>
+            
+              <code>
+                django-admin/
+                
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                admin/
+                
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                documents/
+                
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                search/
+                [name='search']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v2/
+                
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                search/
+                [name='api_search']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                articles/top-stories
+                [name='articles_top_stories']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                articles/health-topics
+                [name='articles_health_topics']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                articles/paths
+                [name='articles_paths']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                articles/&lt;slug:slug&gt;
+                [name='article_detail']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                articles/&lt;slug:slug&gt;/related
+                [name='article_related']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                articles/hi/&lt;slug:slug&gt;
+                [name='article_detail_hi']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                conditions/index
+                [name='conditions_index']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                conditions/paths
+                [name='conditions_paths']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                conditions/&lt;slug:slug&gt;
+                [name='condition_detail']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                conditions/hi/&lt;slug:slug&gt;
+                [name='condition_detail_hi']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                search/articles
+                [name='search_articles']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                search/conditions
+                [name='search_conditions']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                well-being
+                [name='well_being']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                symptom-checker/
+                [name='symptom_checker']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                notifications/subscribe
+                [name='notification_subscribe']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                newsletter/subscribe
+                [name='newsletter_subscribe']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                sitemap.xml
+                
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                ^media/(?P&lt;path&gt;.*)$
+                
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                ^static/(?P&lt;path&gt;.*)$
+                
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                _util/authenticate_with_password/&lt;int:page_view_restriction_id&gt;/&lt;int:page_id&gt;/
+                [name='wagtailcore_authenticate_with_password']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                _util/login/
+                [name='wagtailcore_login']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^((?:[\w\-]+/)*)$
+                [name='wagtail_serve']
+              </code>
+            
+          </li>
+        
+      </ol>
+      <p>
+        
+          The current path, <code>api/news/latest/</code>,
+        
+        matched the last one.
+      </p>
+    
+  </main>
+
+  <footer id="explanation">
+    <p>
+      You’re seeing this error because you have <code>DEBUG = True</code> in
+      your Django settings file. Change that to <code>False</code>, and Django
+      will display a standard 404 page.
+    </p>
+  </footer>
+</body>
+</html>
+hydration-error-info.js:63:14
+Error fetching news: Request failed with status code 404 hydration-error-info.js:63:14
+Error fetching news: 
+Object { message: "Request failed with status code 404", name: "AxiosError", code: "ERR_BAD_REQUEST", config: {…}, request: XMLHttpRequest, response: {…}, status: 404, stack: "", … }
+hydration-error-info.js:63:14
+API error: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Page not found at /api/news/latest/</title>
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <style>
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font-family: sans-serif; background:#eee; color:#000; }
+    body > :where(header, main, footer) { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 small { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
+  </style>
+</head>
+<body>
+  <header id="summary">
+    <h1>Page not found <small>(404)</small></h1>
+    
+    <table class="meta">
+      <tr>
+        <th scope="row">Request Method:</th>
+        <td>GET</td>
+      </tr>
+      <tr>
+        <th scope="row">Request URL:</th>
+        <td>http://0.0.0.0:8001/api/news/latest/?lang=en</td>
+      </tr>
+      
+      <tr>
+        <th scope="row">Raised by:</th>
+        <td>wagtail.views.serve</td>
+      </tr>
+      
+    </table>
+  </header>
+
+  <main id="info">
+    
+      <p>
+      Using the URLconf defined in <code>healthinfo.urls</code>,
+      Django tried these URL patterns, in this order:
+      </p>
+      <ol>
+        
+          <li>
+            
+              <code>
+                django-admin/
+                
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                admin/
+                
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                documents/
+                
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                search/
+                [name='search']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/v2/
+                
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                search/
+                [name='api_search']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                articles/top-stories
+                [name='articles_top_stories']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                articles/health-topics
+                [name='articles_health_topics']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                articles/paths
+                [name='articles_paths']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                articles/&lt;slug:slug&gt;
+                [name='article_detail']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                articles/&lt;slug:slug&gt;/related
+                [name='article_related']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                articles/hi/&lt;slug:slug&gt;
+                [name='article_detail_hi']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                conditions/index
+                [name='conditions_index']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                conditions/paths
+                [name='conditions_paths']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                conditions/&lt;slug:slug&gt;
+                [name='condition_detail']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                conditions/hi/&lt;slug:slug&gt;
+                [name='condition_detail_hi']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                search/articles
+                [name='search_articles']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                search/conditions
+                [name='search_conditions']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                well-being
+                [name='well_being']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                symptom-checker/
+                [name='symptom_checker']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                notifications/subscribe
+                [name='notification_subscribe']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                api/
+                
+              </code>
+            
+              <code>
+                newsletter/subscribe
+                [name='newsletter_subscribe']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                sitemap.xml
+                
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                ^media/(?P&lt;path&gt;.*)$
+                
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                ^static/(?P&lt;path&gt;.*)$
+                
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                _util/authenticate_with_password/&lt;int:page_view_restriction_id&gt;/&lt;int:page_id&gt;/
+                [name='wagtailcore_authenticate_with_password']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                _util/login/
+                [name='wagtailcore_login']
+              </code>
+            
+          </li>
+        
+          <li>
+            
+              <code>
+                
+                
+              </code>
+            
+              <code>
+                ^((?:[\w\-]+/)*)$
+                [name='wagtail_serve']
+              </code>
+            
+          </li>
+        
+      </ol>
+      <p>
+        
+          The current path, <code>api/news/latest/</code>,
+        
+        matched the last one.
+      </p>
+    
+  </main>
+
+  <footer id="explanation">
+    <p>
+      You’re seeing this error because you have <code>DEBUG = True</code> in
+      your Django settings file. Change that to <code>False</code>, and Django
+      will display a standard 404 page.
+    </p>
+  </footer>
+</body>
+</html>
+hydration-error-info.js:63:14
+Error fetching news: Request failed with status code 404 hydration-error-info.js:63:14
+Error fetching news: 
+Object { message: "Request failed with status code 404", name: "AxiosError", code: "ERR_BAD_REQUEST", config: {…}, request: XMLHttpRequest, response: {…}, status: 404, stack: "", … }
+hydration-error-info.js:63:14
+A resource is blocked by OpaqueResponseBlocking, please check browser console for details. photo-1547561091-3d985041d42f
+[Fast Refresh] rebuilding hot-reloader-client.js:222:25
+[Fast Refresh] done in 588ms hot-reloader-client.js:191:17
+Image with src "/media/images/57bf5d2bb7ab58b3bdd78808b81f3e22.2e16d0ba.fill-800x500.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes warn-once.js:16:21
+GET
+http://localhost:5000/_next/image?url=https://example.com/images/pistachios.jpg&w=640&q=75
+[HTTP/1.1 404 Not Found 1098ms]
+
+GET
+http://localhost:5000/_next/image?url=https://example.com/images/alcohol-skin.jpg&w=640&q=75
+[HTTP/1.1 404 Not Found 1084ms]
+
+GET
+http://localhost:5000/_next/image?url=https://example.com/images/cracked-heels.jpg&w=640&q=75
+[HTTP/1.1 404 Not Found 1481ms]
+

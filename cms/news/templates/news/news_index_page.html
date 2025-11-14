@@ -1,0 +1,41 @@
+
+{% extends "base.html" %}
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-4">{{ page.title }}</h1>
+    
+    {% if page.intro %}
+        <div class="prose max-w-none mb-8">
+            {{ page.intro|richtext }}
+        </div>
+    {% endif %}
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {% for news in news_items %}
+            <a href="{% pageurl news %}" class="border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+                {% if news.image %}
+                    {% image news.image fill-800x500 class="w-full h-48 object-cover" %}
+                {% endif %}
+                <div class="p-4">
+                    {% if news.category %}
+                        <span class="inline-block bg-primary/10 text-primary px-2 py-0.5 rounded-full text-sm mb-2">
+                            {{ news.category.name }}
+                        </span>
+                    {% endif %}
+                    <h2 class="font-bold text-xl mb-2">{{ news.title }}</h2>
+                    {% if news.summary %}
+                        <p class="text-gray-600">{{ news.summary }}</p>
+                    {% endif %}
+                    <div class="mt-2 text-sm text-gray-500">
+                        {{ news.publish_date|date:"F j, Y" }}
+                    </div>
+                </div>
+            </a>
+        {% empty %}
+            <p class="text-gray-500 italic">No news articles found.</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

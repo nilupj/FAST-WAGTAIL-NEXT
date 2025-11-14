@@ -1,0 +1,39 @@
+
+{% extends "base.html" %}
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block content %}
+<article class="container mx-auto px-4 py-8">
+    {% if page.image %}
+        <div class="mb-8">
+            {% image page.image fill-800x500 class="w-full h-96 object-cover rounded-lg" %}
+        </div>
+    {% endif %}
+
+    <div class="max-w-3xl mx-auto">
+        {% if page.category %}
+            <span class="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-sm mb-4">
+                {{ page.category.name }}
+            </span>
+        {% endif %}
+        
+        <h1 class="text-4xl font-bold mb-4">{{ page.title }}</h1>
+        
+        {% if page.subtitle %}
+            <p class="text-xl text-gray-600 mb-6">{{ page.subtitle }}</p>
+        {% endif %}
+        
+        <div class="text-sm text-gray-500 mb-8">
+            <span>Published {{ page.publish_date|date:"F j, Y" }}</span>
+            {% if page.source %}
+                <span class="mx-2">•</span>
+                <span>Source: {{ page.source }}</span>
+            {% endif %}
+        </div>
+
+        <div class="prose max-w-none">
+            {{ page.body|richtext }}
+        </div>
+    </div>
+</article>
+{% endblock %}

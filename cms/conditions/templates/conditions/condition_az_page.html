@@ -1,0 +1,48 @@
+
+{% extends "base.html" %}
+{% load wagtailcore_tags %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-4">Health Conditions A-Z</h1>
+    
+    {% if page.intro %}
+        <div class="prose max-w-none mb-8">
+            {{ page.intro|richtext }}
+        </div>
+    {% endif %}
+    
+    <div class="mb-8">
+        <div class="flex flex-wrap gap-2">
+            {% for letter, conditions in conditions_by_letter.items %}
+                <a href="#{{ letter }}" 
+                   class="px-3 py-2 text-sm font-medium rounded-lg {% if conditions %}bg-primary text-white{% else %}bg-gray-100 text-gray-500{% endif %}">
+                    {{ letter }}
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+    
+    <div class="space-y-8">
+        {% for letter, conditions in conditions_by_letter.items %}
+            <div id="{{ letter }}" class="scroll-mt-24">
+                <h2 class="text-2xl font-bold mb-4">{{ letter }}</h2>
+                {% if conditions %}
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        {% for condition in conditions %}
+                            <a href="{% pageurl condition %}" class="p-4 border rounded-lg hover:bg-gray-50">
+                                <h3 class="font-medium text-primary">{{ condition.title }}</h3>
+                                {% if condition.subtitle %}
+                                    <p class="text-sm text-gray-600">{{ condition.subtitle }}</p>
+                                {% endif %}
+                            </a>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <p class="text-gray-500 italic">No conditions found starting with this letter.</p>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

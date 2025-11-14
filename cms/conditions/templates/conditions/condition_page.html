@@ -1,0 +1,33 @@
+
+{% extends "base.html" %}
+{% load wagtailcore_tags %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8">
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}
+        <h2>{{ page.subtitle }}</h2>
+    {% endif %}
+    
+    {% if page.overview %}
+        <section>
+            <h3>Overview</h3>
+            {{ page.overview|richtext }}
+        </section>
+    {% endif %}
+
+    {% if page.symptoms %}
+        <section>
+            <h3>Symptoms</h3>
+            {{ page.symptoms|richtext }}
+        </section>
+    {% endif %}
+
+    {% if page.treatments %}
+        <section>
+            <h3>Treatments</h3>
+            {{ page.treatments|richtext }}
+        </section>
+    {% endif %}
+</div>
+{% endblock %}
